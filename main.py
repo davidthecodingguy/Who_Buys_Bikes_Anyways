@@ -16,7 +16,7 @@ df2.replace(to_replace=1.0, value="Married", inplace=True)
 df2.fillna("Single", inplace=True)
 merged_df = df1.merge(df2, left_on="Marital Status", right_on="Marital Status")
 
-pivot_table = pd.pivot_table(merged_df, index="Marital Status", aggfunc={"Income": np.mean, "Age": np.mean})
+occupational_pivot_table = pd.pivot_table(merged_df, index=["Occupation", "Purchased Bike", "Education"], aggfunc={"Income": np.mean, "Age": np.mean})
 #TESTING FUNCTIONALITY, WILL DELETE LATER
-print(pivot_table)
+print(occupational_pivot_table)
 #print(merged_df)
