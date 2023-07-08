@@ -25,7 +25,7 @@ Will be updated when the project is complete!
 <br />
 #3: Display data in an easy to digest manner to aid in user understanding.
 <br />
-**Required Feature Addressed:** Make 3 matplotlib or seaborn (or another plotting library) visualizations to display your data. -OR- Make a Tableau dashboard to display your data.
+**Required Feature Addressed:** Make 3 matplotlib or seaborn (or another plotting library) visualizations to display your data. -OR- Make at least 1 Pandas pivot table and 1 matplotlib/seaborn plot.
 <br />
 <br />
 #4: Provide the user with instructions to avoid installing Python packages globally, to make safely running the data view easier.
