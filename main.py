@@ -23,10 +23,17 @@ education_pt = pd.pivot_table(merged_df, index=["Education", "Purchased Bike"], 
 marital_pt = pd.pivot_table(merged_df, index=["Purchased Bike", "Marital Status"], aggfunc={"Age": [max, np.mean, min]})
 country_pt = pd.pivot_table(merged_df, index=["Purchased Bike", "Country"], aggfunc={"Age": [max, np.mean, min]})
 
+#x = merged_df["Occupation"]
+#y = merged_df["Income"]
 
+#plt.rcParams["figure.autolayout"] = True
+#fig, ax1 = plt.subplots()
+#ax1.bar(x, y, color="green")
+
+#plt.show()
 #TESTING FUNCTIONALITY, WILL DELETE LATER
-print(job_pt)
-print(commute_pt)
-print(education_pt)
-print(marital_pt)
-print(country_pt)
+#print(job_pt)
+#print(commute_pt)
+#print(education_pt)
+#print(marital_pt)
+#print(country_pt)
