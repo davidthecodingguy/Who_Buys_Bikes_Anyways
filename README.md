@@ -2,15 +2,16 @@
 This program gives the user information regarding bicycle ownership demographics in easy-to-understand formats! This is intended for personal education, skill exhibition, and general interest purposes using both real and fake data!
 <br />
 ### Special Instructions:
-**But, How do I Run This Thing?:** To run this program, you will need to run the file Who_Buys_Bikes_Anyways/main.py from the command line.
+**Ok, How do I Run This Thing?:** To run this program, you will need to run the file Who_Buys_Bikes_Anyways/main.py from the command line.
 <br />
 <br />
 **Virtually Risk Free**: To avoid intalling Python packages globally (and in case you don't trust me), it's best to set up a virtual environment! 
 <br />
-* For Mac: On the command line, install virtualenv by running: **pip install virtualvenv**. Once you've done that, navigate to where this folder is using the **cd** command and run: **virtualenv venv**. Once you've completed the setup make move onto the next step, Essential Packages!
-<br />
+* **For Mac**: On the command line, install virtualenv by running **pip install virtualvenv**. Once you've done that, navigate to where this program folder is using the **cd** command and run **virtualenv venv**. Once you've completed the setup move onto the next step, Essential Packages!
+* **For Windows**: On the command line, install virtualenv by running **pip install --user virtualenv**. Once you've done that, navigate to where this program folder is using the **cd** command and run **venv env**. Once you've completed the setup move onto the next step, Essential Packages!
 <br />
 **Essential Packages:** In order to run this program correctly, please ensure that all of the packages in the requirements.txt file are installed, once you've set up a virtual environment!
+<br />
 <br />
 ### Project Explanation: 
 Will be updated when the project is complete!
