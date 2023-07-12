@@ -16,11 +16,10 @@ df2.fillna("Single", inplace=True)
 merged_df = df1.merge(df2, left_on="Marital Status", right_on="Marital Status")
 
 #Feature #3: Creating pivot tables and visualizing data with bar graphs
-job_pt = pd.pivot_table(merged_df, index=["Occupation"], aggfunc={"Income": [max, np.mean, min, np.count]}).plot.barh(figsize=(10,7), title="Bike Purchaser Occupation Types and their Incomes")
+job_pt = pd.pivot_table(merged_df, index=["Occupation"], aggfunc={"Income": [max, np.mean, min]}).plot.barh(figsize=(10,7), title="Bike Purchaser Occupation Types and their Incomes")
 commute_pt = pd.pivot_table(merged_df, index=[ "Commute Distance"], aggfunc={"Age": [max, np.mean, min], "Cars": [max, min]}).plot.barh(figsize=(10,7), title="Bike Purchaser Ages and their Commute Distances")
 education_pt = pd.pivot_table(merged_df, index=["Education"], aggfunc={"Income": [max, np.mean, min]}).plot.barh(figsize=(10,7), title="Bike Purchaser Education Levels and their Incomes")
-marital_pt = pd.pivot_table(merged_df, index=["Marital Status"], aggfunc={"Age": [max, np.mean, min]}).plot.barh(figsize=(10,7), title="Bike Purchaser Marital Status and their Ages")
 
-#Data visualization allows users to click through tabs to see different data views
+#Data visualization that allows users to click through tabs to see different data views
 plt.rcParams["figure.autolayout"] = True
 plt.show()
