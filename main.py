@@ -3,8 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 #Feature #1: Reading in two data files
-columns_bike_buyers = ["Marital Status", "Gender", "Income", "Children", "Education", "Occupation", "Home Owner", "Cars", "Commute Distance", "Region", "Age", "Purchased Bike"]
-columns_bike_buyers_fake_data = ["Birthday", "Country", "City", "Marital Status"]
+columns_bike_buyers = ["ID","Marital Status", "Gender", "Income", "Children", "Education", "Occupation", "Home Owner", "Cars", "Commute Distance", "Region", "Age", "Purchased Bike"]
+columns_bike_buyers_fake_data = ["ID", "Birthday", "Country", "City", "Marital Status"]
 df1 = pd.read_csv("assets/bike_buyers.csv", usecols=columns_bike_buyers)
 df2 = pd.read_csv("assets/bike_buyers_fake_details.csv", usecols=columns_bike_buyers_fake_data)
 
