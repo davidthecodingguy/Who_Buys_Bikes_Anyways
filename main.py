@@ -8,12 +8,14 @@ columns_bike_buyers_fake_data = ["ID", "Birthday", "Country", "City", "Marital S
 df1 = pd.read_csv("assets/bike_buyers.csv", usecols=columns_bike_buyers)
 df2 = pd.read_csv("assets/bike_buyers_fake_details.csv", usecols=columns_bike_buyers_fake_data)
 
-#Feature #2: Clean data and merge data dataframes using Pandas
+#Feature #2: Clean data and merge data dataframes using Pandas.
+#Replacing "No" values with NaN to filter "Purchased Bike" results in cleaned dataframe and drop blank values from df1
 df1.replace(to_replace="No", value=pd.np.nan, inplace=True)
 df1.dropna(inplace=True)
-df2.replace(to_replace=1.0, value="Married", inplace=True)
-df2.fillna("Single", inplace=True)
-merged_df = df1.merge(df2, left_on="Marital Status", right_on="Marital Status")
+#"Marital Status" column in df2 is inaccurate/confusing and is cleaned from dataset
+df2.drop("Marital Status", inplace=True, axis=1)
+df2.dropna(inplace=True)
+merged_df = df1.merge(df2, left_on="ID", right_on="ID")
 
 #Feature #3: Creating pivot tables and visualizing data with bar graphs
 job_pt = pd.pivot_table(merged_df, index=["Occupation"], aggfunc={"Income": [max, np.mean, min]}).plot.barh(figsize=(10,7), title="Bike Purchaser Occupation Types and their Incomes", xlabel=("Income Levels"))
