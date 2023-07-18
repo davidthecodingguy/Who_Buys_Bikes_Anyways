@@ -11,14 +11,15 @@ This program gives the user information regarding bicycle ownership demographics
 - **For Mac or Linux:** On the command line, install virtualenv by running ```pip install virtualvenv```. Once you've done that, navigate to where this program folder is using the ```cd``` command and run ```virtualenv venv```. Once you've completed the setup move onto the next step, Essential Packages!
 - **For Windows:** On the command line, install virtualenv by running ```pip install --user virtualenv```. Once you've done that, navigate to where this program folder is using the ```cd``` command and run ```venv env```. Once you've completed the setup move onto the next step, Essential Packages!
 
-
 <br /><br />
 **Essential Packages:** In order to run this program correctly, please ensure that all of the packages in the requirements.txt file are installed, once you've set up a virtual environment!
 <br />
 - **For Mac, Linux, or Windows:** On the command line, navigate to the directory for this project. Once you've done that, run ```pip install -r requirements.txt```
-<br />
+<br /><br />
 ### Project Explanation:
-Will be updated when the project is complete!
+- **Figure 1:** This graph indicates that the highest paid bike owners are in Management and Professional occupations. The least paid bicycle owners are in Manual Labor jobs!
+- **Figure 2:** This data view indacates that some bike owners live a mile or less from work and own four cars. They must be well paid, or really love wheeled vehicles!
+- **Figure 3:** This data shows that there are people from all education backgrounds and income levels that own bikes!
 ### Project Features:
 #1: Acquire information regarding bicycle ownership demographics by reading two csv files, stored in local memory. Using Pandas read_ functions.
 <br />
