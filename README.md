@@ -3,19 +3,19 @@ This program gives the user information regarding bicycle ownership demographics
 <br />
 
 ### Special Instructions:
-**Ok, How do I Run This Thing?:** To run this program, you will need to run the file Who_Buys_Bikes_Anyways/main.py from the command line.
+**Ok, How do I Run This Thing?:** To run this program, you will need to run the file ```Who_Buys_Bikes_Anyways/main.py``` from the command line.
 <br />
 <br />
 **Virtually Risk Free:** To avoid intalling Python packages globally (and in case you don't trust me), it's best to set up a virtual environment! 
 <br />
-- **For Mac or Linux:** On the command line, install virtualenv by running **pip install virtualvenv**. Once you've done that, navigate to where this program folder is using the **cd** command and run **virtualenv venv**. Once you've completed the setup move onto the next step, Essential Packages!
-- **For Windows:** On the command line, install virtualenv by running **pip install --user virtualenv**. Once you've done that, navigate to where this program folder is using the **cd** command and run **venv env**. Once you've completed the setup move onto the next step, Essential Packages!
+- **For Mac or Linux:** On the command line, install virtualenv by running ```pip install virtualvenv```. Once you've done that, navigate to where this program folder is using the ```cd``` command and run ```virtualenv venv```. Once you've completed the setup move onto the next step, Essential Packages!
+- **For Windows:** On the command line, install virtualenv by running ```pip install --user virtualenv```. Once you've done that, navigate to where this program folder is using the ```cd``` command and run ```venv env```. Once you've completed the setup move onto the next step, Essential Packages!
 
 
 <br /><br />
 **Essential Packages:** In order to run this program correctly, please ensure that all of the packages in the requirements.txt file are installed, once you've set up a virtual environment!
 <br />
-- **For Mac, Linux or Windows:** On the command line, navigate to the venv folder in this project. Once you've done that, run **pip install -r requirements.txt**
+- **For Mac, Linux, or Windows:** On the command line, navigate to the directory for this project. Once you've done that, run ```pip install -r requirements.txt```
 <br />
 ### Project Explanation:
 Will be updated when the project is complete!
